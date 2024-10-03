@@ -1,0 +1,54 @@
+@import "../../variables.scss";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  padding: 20px;
+
+  .burger {
+    cursor: pointer;
+  }
+}
+
+.closed {
+  display: none;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 88px;
+  left: 0;
+  padding: 100px 20px 0;
+  gap: 20px;
+  background: $background;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    padding: 40px;
+
+    .burger {
+      display: none;
+    }
+
+    .closed,
+    .open {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      width: auto;
+      height: auto;
+      top: 0;
+      padding: 0;
+      background: none;
+      gap: 40px;
+    }
+  }
+}
