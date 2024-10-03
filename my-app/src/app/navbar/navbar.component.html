@@ -1,0 +1,26 @@
+<nav>
+  <img
+    ngSrc="/assets/images/coffee.png"
+    width="48"
+    height="48"
+    alt="logo"
+    priority
+  />
+  <img
+    ngSrc="/assets/images/burger-bar.png"
+    width="32"
+    height="32"
+    alt="burger"
+    class="burger"
+    (click)="toggleMenu()"
+  />
+
+  <ul [class.open]="isMenuOpen" [class.closed]="!isMenuOpen">
+    <li><a routerLink="" class="lato-bold" (click)="toggleMenu()">Home</a></li>
+    <li>
+      <a routerLink="/counter" class="lato-bold" (click)="toggleMenu()"
+        >Counter</a
+      >
+    </li>
+  </ul>
+</nav>
