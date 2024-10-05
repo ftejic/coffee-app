@@ -1,0 +1,24 @@
+@import "../../../variables.scss";
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+
+    button {
+        padding: 12px 20px;
+        background: $foreground;
+        color: $background;
+        border: none;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 100px 40px;
+    
+
+    }
+}

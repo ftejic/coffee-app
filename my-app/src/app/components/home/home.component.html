@@ -1,0 +1,7 @@
+<section>
+  <button (click)="onClick()">Random Coffee</button>
+
+  <div>
+    <img *ngIf="imageUrl" [ngSrc]="imageUrl || ''" fill alt="image" priority />
+  </div>
+</section>
