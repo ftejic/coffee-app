@@ -10,7 +10,7 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   getImage(): Observable<ApiData> {
-    const apiUrl = 'https://coffee.alexflipnote.dev/random.json';
+    const apiUrl = 'http://localhost:3000/getImage';
     return this.http.get<ApiData>(apiUrl);
   }
 }
